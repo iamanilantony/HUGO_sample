@@ -1,22 +1,28 @@
 {{ define "main"}}
 <div>
-
     <div class="title-section">
         <div class="container">
             {{- partial "navbar" . -}}
             <div class="row">
-                <div class="col">
-                    <h1>{{ .Site.Title }}</h1>
+                <div
+                    class="col d-flex justify-content-center align-items-center flex-column color-white custom-height z-index heading">
+                    <h1 class="text-center">{{ .Params.Heading }}</h1>
                     {{ with .Params.subtitle }}
-                    <h2>{{ . }}</h2>
+                    <h2 class="text-center">{{ . }}</h2>
+                    <button class="btn gold p-2" type="submit">Contact us</button>
                     {{ end }}
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col">
-            {{ .Content }}
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                {{- partial "aboutCard" . -}}
+                {{- partial "aboutCardLeft" . -}}
+                {{ .Content }}
+            </div>
         </div>
     </div>
 </div>

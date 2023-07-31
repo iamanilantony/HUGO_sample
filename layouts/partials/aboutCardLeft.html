@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-between p-2 padding-40">
+
+    <div>
+        {{with .Params.image1 }}
+        <img class="image-section" src="{{ . }}" />
+        {{ end }}
+    </div>
+    <div class="section-title">
+        <h1>Our Mission</h1>
+        <p>{{ .Params.text2 }}</p>
+        <button class="btn goldButton p-2" type="submit">Contact us</button>
+    </div>
+</div>
