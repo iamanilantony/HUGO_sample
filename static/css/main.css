@@ -1,235 +1,302 @@
 :root {
-    --bs-primary: #B26832;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  .custom-smaller-font {
-    font-size: 8px; /* Adjust the font size as per your preference */
-  }
-
-  .z-index{
-    z-index: 2;
-  }
-
-  .heading{
-    opacity: 0;
-    animation: fadeInUp 1s ease forwards; 
-  }
-
-  .heading h1{
-    font-size: 4rem;
-    font-weight: 600;
-  }
-  
-  .heading h2{
-    font-size: 1.2rem;
-    font-weight: 200;
-    margin: 1rem 0;
-  }
-
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .image-section{
-    width: 35vw;
-    height: auto;
-    border-radius: 10px;
-  }
-
-.title-section {
-    position: relative;
-    background: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2400&q=80') no-repeat center center;
-    /* background: url('/assets/images/header.jpg') no-repeat center center; */
-    background-size: cover;
-    height: 100vh;
-    color: #fff;
+  --bs-primary: #B26832;
+  font-family: 'Poppins', sans-serif;
 }
 
-.section-title::before{
-    content: '';
-    display: inline-block;
-    align-items: center;
-    width: 25px;
-    height: 3px;
-    background-color: #B26832;
-    margin-right: 10px; 
+.custom-smaller-font {
+  font-size: 8px;
+  /* Adjust the font size as per your preference */
+}
+
+.z-index {
+  z-index: 2;
+}
+
+.heading {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.heading h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.heading h2 {
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin: 1rem 0;
+}
+
+.spacing {
+  margin-top: 6rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-section {
+  width: 35vw;
+  height: 45vh;
+  border-radius: 10px;
+}
+
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+
+.title-section {
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2400&q=80') no-repeat center center;
+  /* background: url('/assets/images/header.jpg') no-repeat center center; */
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+}
+
+.section-title::before {
+  content: '';
+  display: inline-block;
+  align-items: center;
+  width: 25px;
+  height: 3px;
+  background-color: #B26832;
+  margin-right: 10px;
 }
 
 .section-title {
-    padding: 30px;
+  padding: 30px;
 }
 
-.section-title p{
-    text-align:justify;
+
+.section-title p {
+  text-align: justify;
 }
 
 /* Custom styles for the button */
 .gold {
-    border-color: #B26832;
-    color: white;
-    font-size: 14px;
-  }
-
-  .goldButton {
-    border-color: #B26832;
-    color: black;
-    font-size: 14px;
-  }
-
-  .goldButton:hover {
-    background-color: #B26832;
-    color: white;
-  }
-
-  .padding-40{
-    padding-top: 8rem;
-    padding-bottom: 40px;
-  }
-  
-  /* Optional: You can also change the background color if needed */
-  .gold:hover {
-    background-color: #B26832;
-    color: white;
-  }
-
-.title-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Adjust the last value (0.4) to control the darkness of the overlay */
+  border-color: #B26832;
+  color: white;
+  font-size: 14px;
 }
 
-.custom-height{
-    height: 80vh;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
+.goldButton {
+  border-color: #B26832;
+  color: black;
+  font-size: 14px;
+}
+
+.goldButton:hover {
+  background-color: #B26832;
+  color: white;
+}
+
+.padding-40 {
+  padding-top: 8rem;
+  padding-bottom: 40px;
+}
+
+/* Optional: You can also change the background color if needed */
+.gold:hover {
+  background-color: #B26832;
+  color: white;
+}
+
+.title-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Adjust the last value (0.4) to control the darkness of the overlay */
+}
+
+.custom-height {
+  height: 80vh;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
+
 header {
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
-    background: #0b2239;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  background: #0b2239;
 }
+
 header .header-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
+
 header .header-left .logo {
-    width: 140px;
+  width: 140px;
 }
+
 header .header-left nav {
-    margin-left: 50px;
+  margin-left: 50px;
 }
+
 header .header-left nav ul {
-    display: flex;
+  display: flex;
 }
+
 nav ul li a {
-    display: block;
-    color: #cfd9e0;
-    font-size: 18px;
-    padding: 5px 10px;
-    transition: 0.2s;
+  display: block;
+  color: #cfd9e0;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: 0.2s;
 }
+
 nav ul li a:hover,
 nav ul li a.active {
-    color: #fff;
+  color: #fff;
 }
+
 nav .login-signup {
-    display: none;
+  display: none;
 }
+
 header .header-right {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
+
 header .login-signup {
-    color: #cfd9e0;
-    font-weight: bold;
+  color: #cfd9e0;
+  font-weight: bold;
 }
+
 header .login-signup a {
-    display: inline-block;
-    color: #0b2239;
-    background: #4ad295;
-    padding: 5px 12px;
-    border-radius: 5px;
+  display: inline-block;
+  color: #0b2239;
+  background: #4ad295;
+  padding: 5px 12px;
+  border-radius: 5px;
 }
+
 header .header-right .hamburger {
-    margin-left: 20px;
-    cursor: pointer;
-    display: none;
+  margin-left: 20px;
+  cursor: pointer;
+  display: none;
 }
+
 header .header-right .hamburger div {
-    width: 30px;
-    height: 2px;
-    margin: 6px 0;
-    background: #fff;
+  width: 30px;
+  height: 2px;
+  margin: 6px 0;
+  background: #fff;
 }
+
 @media only screen and (max-width: 1000px) {
-    header {
-        padding: 0 20px;
-    }
-    header .header-right .hamburger {
-        display: block;
-    }
-    header .header-left nav {
-        margin: 0;
-        position: absolute;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: fit-content;
-        background-color: #0b2239;
-        padding: 30px;
-        transition: 0.3s;
-        text-align: center;
-        z-index: -1;
-    }
-    header .header-left nav.active {
-        top: 70px;
-    }
-    header .header-left nav ul {
-        display: block;
-    }
+  header {
+    padding: 0 20px;
+  }
+
+  header .header-right .hamburger {
+    display: block;
+  }
+
+  header .header-left nav {
+    margin: 0;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: #0b2239;
+    padding: 30px;
+    transition: 0.3s;
+    text-align: center;
+    z-index: -1;
+  }
+
+  header .header-left nav.active {
+    top: 70px;
+  }
+
+  header .header-left nav ul {
+    display: block;
+  }
+
+  .section-title {
+    padding: 0;
+  }
+
+  .card-container {
+    flex-direction: column;
+    margin-top: 0rem;
+  }
+
+  .card-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .card-container div {
+    width: 100%;
+  }
+
+  .spacing {
+    margin-top: 1rem;
+  }
+
+
+  .image-section {
+    width: 90vw;
+    height: 45vh;
+    border-radius: 10px;
+  }
+
 }
+
 @media only screen and (max-width: 500px) {
-    nav .login-signup {
-        display: block;
-        margin-top: 20px;
-    }
-    header .header-right .login-signup {
-        display: none;
-    }
-    .heading h1{
-        font-size: 3rem;
-      }
-      
-      .heading h2{
-        font-size: 1rem;
-      }
-      
+  nav .login-signup {
+    display: block;
+    margin-top: 20px;
+  }
+
+  header .header-right .login-signup {
+    display: none;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  .heading h2 {
+    font-size: 1rem;
+  }
+
 
 }

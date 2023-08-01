@@ -19,9 +19,14 @@
 
         <div class="row">
             <div class="col">
+                <div class="spacing"></div>
                 {{- partial "aboutCard" . -}}
+                <div class="spacing"></div>
                 {{- partial "aboutCardLeft" . -}}
+                <div class="spacing"></div>
                 {{ .Content }}
+                <div class="spacing"></div>
+                {{- partial "testimonials" . -}}
             </div>
         </div>
     </div>

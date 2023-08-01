@@ -1,13 +1,12 @@
-<div class="d-flex justify-content-between p-2 padding-40">
-
-    <div>
-        {{with .Params.image1 }}
-        <img class="image-section" src="{{ . }}" />
+<div class="card-container card-reverse">
+    <div class="col-6 sm-col-12">
+        {{with .Params.image2 }}
+        <img class="image-section rounded" src="{{ . }}" />
         {{ end }}
     </div>
-    <div class="section-title">
-        <h1>Our Mission</h1>
-        <p>{{ .Params.text2 }}</p>
+    <div class="section-title p-2 col-6 sm-col-12">
+        <h2>Our mission</h2>
+        <p class="col-10">{{ .Params.text2 }}</p>
         <button class="btn goldButton p-2" type="submit">Contact us</button>
     </div>
 </div>
