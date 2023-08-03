@@ -1,13 +1,15 @@
 <div class="container">
     <div class="row">
-        <div class="section-title p-2 col-2 sm-col-12" style="text-align: left;">
+        <div class="section-title p-2 col-2 sm-col-12 d-flex flex-start" style="align-items: start;">
             <h6 style="padding-top: 0.5rem;">Frequently Asked Questions</h6>
             <h2 style="text-align: left; width: 80%; margin-top: 2rem">Common questions asked about our services</h2>
             <p class="p-2" style="text-align: left;">
                 Here are some important questions that are frequently asked and the answer to the questions
             </p>
-            <h4 style="text-align: left;">Have a different Question?</h4>
-            <button class="btn gold" type="submit">Contact us</button>
+            <div class="d-flex flex-column" style="align-items: start;">
+                <h4 style="text-align: left;">Have a different Question?</h4>
+                <button class="btn gold" type="submit">Contact us</button>
+            </div>
         </div>
         <div class="col-md-6 qna-section">
             <div class="accordion" id="accordionQNA">
@@ -15,70 +17,70 @@
                     <div class="accordion-header" id="headingOne">
                         <h2 class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                             aria-expanded="true" aria-controls="collapseOne">
-                            Question 1
+                            {{ .Params.q1 }}
                         </h2>
                     </div>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionQNA">
                         <div class="accordion-body">
-                            Answer 1
+                            {{ .Params.a1 }}
                         </div>
                     </div>
                 </div>
 
-                <div class="accordion-item card">
+                <div class="accordion-item card bg-white">
                     <div class="accordion-header" id="headingTwo">
                         <h2 class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                             aria-expanded="false" aria-controls="collapseTwo">
-                            Question 2
+                            {{ .Params.q2 }}
                         </h2>
                     </div>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionQNA">
                         <div class="accordion-body">
-                            Answer 2
+                            {{ .Params.a2 }}
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item card">
+                <div class="accordion-item card bg-white">
                     <div class="accordion-header" id="headingThree">
                         <h2 class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree"
                             aria-expanded="false" aria-controls="collapseThree">
-                            Question 2
+                            {{ .Params.q3 }}
                         </h2>
                     </div>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionQNA">
                         <div class="accordion-body">
-                            Answer 2
+                            {{ .Params.a3 }}
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item card">
+                <div class="accordion-item card bg-white">
                     <div class="accordion-header" id="headingFour">
                         <h2 class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour"
                             aria-expanded="false" aria-controls="collapseFour">
-                            Question 2
+                            {{ .Params.q4 }}
                         </h2>
                     </div>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionQNA">
                         <div class="accordion-body">
-                            Answer 2
+                            {{ .Params.a4 }}
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item card">
+                <div class="accordion-item card bg-white">
                     <div class="accordion-header" id="headingFive">
                         <h2 class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive"
                             aria-expanded="false" aria-controls="collapseFive">
-                            Question 2
+                            {{ .Params.q5 }}
                         </h2>
                     </div>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                         data-bs-parent="#accordionQNA">
                         <div class="accordion-body">
-                            Answer 2
+                            {{ .Params.a5 }}
                         </div>
                     </div>
                 </div>

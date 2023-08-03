@@ -15,4 +15,31 @@ person1: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-
 person2: 'https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2676&q=80'
 person3: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80'
 person4: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60'
+q1: "Can I get building maintenance services in Dubai and Abu Dhabi?"
+a1: "Yes, we provide building maintenance services in both Dubai and Abu Dhabi. Our teams are available to serve you in both cities."
+q2: "Are your services available 24/7?"
+a2: "Absolutely! We offer round-the-clock emergency services, ensuring that we are there for you whenever you need us."
+q3: "What types of services do you offer?"
+a3: " Our services include:
+        AC repairs and maintenance
+        Electrical issues and repairs
+        Plumbing repairs and services
+        General building maintenance
+      "
+q4: "How can I request your services?"
+a4: "You can contact us through our website or call our 24/7 helpline to request our services. Our team will respond promptly and schedule a visit."
+q5: "Can I get building maintenance services in Dubai and Abu Dhabi?"
+a5: "   Yes, we provide building maintenance services in both Dubai and Abu Dhabi. Our teams are available to serve you in both cities."
+service1: "Cleaning Services"
+servicedesc1: "We take pride in maintaining pristine spaces with our top-notch cleaning solutions, including regular cleaning, deep cleaning, window cleaning and upholstery cleaning"
+serviesimage1: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
+service2: "Cleaning Services"
+servicedesc2: "We take pride in maintaining pristine spaces with our top-notch cleaning solutions, including regular cleaning, deep cleaning, window cleaning and upholstery cleaning"
+serviesimage2: ""
+service3: "Cleaning Services"
+servicedesc3: "We take pride in maintaining pristine spaces with our top-notch cleaning solutions, including regular cleaning, deep cleaning, window cleaning and upholstery cleaning"
+serviesimage3: ""
+service4: "Cleaning Services"
+servicedesc4: "We take pride in maintaining pristine spaces with our top-notch cleaning solutions, including regular cleaning, deep cleaning, window cleaning and upholstery cleaning"
+serviesimage4: ""
 ---
