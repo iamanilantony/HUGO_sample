@@ -261,7 +261,7 @@ body {
 }
 
 .qna-section .card {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   /* Adjust opacity as needed */
   margin-bottom: 10px;
 }

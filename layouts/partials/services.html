@@ -1,37 +1,37 @@
 <style>
     .card-container {
         display: flex;
+        /* flex-direction: column; */
         flex-wrap: wrap;
-        justify-content: space-between;
-        max-width: 1000px;
+        justify-content: center;
+        align-items: center;
+        /* max-width: 1000px; */
     }
 
     .card2 {
-        width: 23%;
-        height: 200px;
-        margin: 5px;
-        background-color: #fff;
+        margin: 10px;
+        /* background-color: #2f2e2e; */
+        border: 1px solid#B26832;
+        color: #ffffff;
         transition: 0.5s;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: height 0.3s;
+        transition: 0.3s;
         overflow: hidden;
+        width: 44%;
+    }
+
+    .card-content:hover {
+        display: flex;
     }
 
     .card2:hover {
-        width: 50%;
-    }
-
-    .card-header {
-        padding: 10px;
-        background-color: #007bff;
-        color: #fff;
-        text-align: center;
-        font-weight: bold;
+        transform: scale(1.02);
+        transition: 0.5s;
     }
 
     .card-content {
-        padding: 10px;
+        padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -39,23 +39,83 @@
         font-size: 18px;
         font-weight: bold;
     }
+
+    .card-content p {
+        font-weight: 300;
+        font-size: 0.9rem;
+    }
+
+    .card-content img {
+        padding: 10px;
+    }
+
+    .card-content h3 {
+        width: 12rem;
+        font-weight: 500;
+    }
+
+    .card-content p {
+        width: 16rem;
+        text-align: justify;
+        margin-right: 3rem;
+    }
+
+    .card-image {
+        width: 40%;
+        height: 280px;
+    }
 </style>
 
+<div class="section-title d-flex align-items-center justify-content-center w-100">
+    <h2 style="text-align: center; color: white;">Our Services</h2>
+</div>
 <div class="card-container">
     <div class="card2">
-        <div class="card-header">Card 1</div>
-        <div class="card-content">Information for Card 1</div>
+        <div class="card-content">
+            <div class="d-flex flex-column justify-content-center">
+                <h3>Cleaning Services</h3>
+                <p>We take pride in maintaining pristine spaces with our top-notch cleaning solutions, including
+                    regular
+                    cleaning, deep cleaning, window cleaning, and upholstery cleaning.</p>
+                {{ $image := resources.Get "images/service1.png" }}
+            </div>
+            <img src="{{ $image.RelPermalink }}" height="300px" class="card-image">
+        </div>
     </div>
     <div class="card2">
-        <div class="card-header">Card 2</div>
-        <div class="card-content">Information for Card 2</div>
+        <div class="card-content">
+            <div class="d-flex flex-column justify-content-center">
+                <h3>Electrical Maintenence</h3>
+                <p>We take pride in maintaining pristine spaces with our top-notch cleaning solutions, including
+                    regular
+                    cleaning, deep cleaning, window cleaning, and upholstery cleaning.</p>
+                {{ $image := resources.Get "images/service2.png" }}
+            </div>
+            <img src="{{ $image.RelPermalink }}" height="300px" class="card-image">
+        </div>
     </div>
     <div class="card2">
-        <div class="card-header">Card 3</div>
-        <div class="card-content">Information for Card 3</div>
+        <div class="card-content">
+            <div class="d-flex flex-column justify-content-center">
+                <h3>Plumbing Works</h3>
+                <p>We take pride in maintaining pristine spaces with our top-notch cleaning solutions, including
+                    regular
+                    cleaning, deep cleaning, window cleaning, and upholstery cleaning.</p>
+                {{ $image := resources.Get "images/service3.png" }}
+            </div>
+            <img src="{{ $image.RelPermalink }}" height="300px" class="card-image">
+        </div>
     </div>
     <div class="card2">
-        <div class="card-header">Card 4</div>
-        <div class="card-content">Information for Card 4</div>
+        <div class="card-content">
+            <div class="d-flex flex-column justify-content-center">
+                <h3>A/C Works</h3>
+                <p>We take pride in maintaining pristine spaces with our top-notch cleaning solutions, including
+                    regular
+                    cleaning, deep cleaning, window cleaning, and upholstery cleaning.</p>
+                {{ $image := resources.Get "images/service4.png" }}
+            </div>
+            <img src="{{ $image.RelPermalink }}" height="300px" class="card-image">
+        </div>
     </div>
 </div>
