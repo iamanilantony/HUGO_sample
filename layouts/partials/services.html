@@ -1,6 +1,7 @@
 <style>
-    .card-container {
-        display: flex;
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         /* flex-direction: column; */
         flex-wrap: wrap;
         justify-content: center;
@@ -18,7 +19,7 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         transition: 0.3s;
         overflow: hidden;
-        width: 20%;
+        /* width: 20%; */
     }
 
     .card-content:hover {
@@ -50,7 +51,7 @@
     }
 
     .card-content h3 {
-        width: 12rem;
+        width: 8rem;
         font-weight: 500;
     }
 
@@ -64,31 +65,43 @@
         width: 40%;
         height: 280px;
     }
+
+    .emoji {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        padding: 15px;
+        margin-bottom: 15px;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 </style>
 
 <div class="section-title d-flex align-items-center justify-content-center w-100">
     <h2 style="text-align: center; color: white;">Our Services</h2>
 </div>
-<div class="card-container">
+<div class="grid-container">
     <div class="card2">
         <div class="card-content">
             <div class="d-flex flex-column justify-content-center">
+                <div class="emoji" style="background-color: rgba(144, 56, 56, 0.5);">
+                    🧹
+                </div>
                 <h3>Cleaning Services</h3>
-                <!-- <p>We take pride in maintaining pristine spaces with our top-notch cleaning solutions, including
-                    regular
-                    cleaning, deep cleaning, window cleaning, and upholstery cleaning.</p> -->
-                {{ $image := resources.Get "images/service1.png" }}
+                <p>We offer top-notch cleaning: regular, deep, window, and upholstery.</p>
             </div>
-            <!-- <img src="{{ $image.RelPermalink }}" height="300px" class="card-image"> -->
         </div>
     </div>
     <div class="card2">
         <div class="card-content">
             <div class="d-flex flex-column justify-content-center">
+                <div class="emoji" style="background-color: rgba(71, 56, 144, 0.5);">
+                    ⚡
+                </div>
                 <h3>Electrical Maintenence</h3>
-                <!-- <p>We take pride in maintaining pristine spaces with our top-notch cleaning solutions, including
-                    regular
-                    cleaning, deep cleaning, window cleaning, and upholstery cleaning.</p> -->
+                <p>We offer top-notch cleaning: regular, deep, window, and upholstery.</p>
                 {{ $image := resources.Get "images/service2.png" }}
             </div>
             <!-- <img src="{{ $image.RelPermalink }}" height="300px" class="card-image"> -->
@@ -97,10 +110,11 @@
     <div class="card2">
         <div class="card-content">
             <div class="d-flex flex-column justify-content-center">
+                <div class="emoji" style="background-color: rgba(56, 144, 85, 0.5);">
+                    🔧
+                </div>
                 <h3>Plumbing Works</h3>
-                <!-- <p>We take pride in maintaining pristine spaces with our top-notch cleaning solutions, including
-                    regular
-                    cleaning, deep cleaning, window cleaning, and upholstery cleaning.</p> -->
+                <p>We offer top-notch cleaning: regular, deep, window, and upholstery.</p>
                 {{ $image := resources.Get "images/service3.png" }}
             </div>
             <!-- <img src="{{ $image.RelPermalink }}" height="300px" class="card-image"> -->
@@ -109,10 +123,37 @@
     <div class="card2">
         <div class="card-content">
             <div class="d-flex flex-column justify-content-center">
+                <div class="emoji" style="background-color: rgba(144, 56, 143, 0.5);">
+                    ❄️
+                </div>
                 <h3>A/C Works</h3>
-                <!-- <p>We take pride in maintaining pristine spaces with our top-notch cleaning solutions, including
-                    regular
-                    cleaning, deep cleaning, window cleaning, and upholstery cleaning.</p> -->
+                <p>We offer top-notch cleaning: regular, deep, window, and upholstery.</p>
+                {{ $image := resources.Get "images/service4.png" }}
+            </div>
+            <!-- <img src="{{ $image.RelPermalink }}" height="300px" class="card-image"> -->
+        </div>
+    </div>
+    <div class="card2">
+        <div class="card-content">
+            <div class="d-flex flex-column justify-content-center">
+                <div class="emoji" style="background-color: rgba(56, 144, 85, 0.5);">
+                    🎨
+                </div>
+                <h3>Painting Works</h3>
+                <p>We offer top-notch cleaning: regular, deep, window, and upholstery.</p>
+                {{ $image := resources.Get "images/service3.png" }}
+            </div>
+            <!-- <img src="{{ $image.RelPermalink }}" height="300px" class="card-image"> -->
+        </div>
+    </div>
+    <div class="card2">
+        <div class="card-content">
+            <div class="d-flex flex-column justify-content-center">
+                <div class="emoji" style="background-color: rgba(144, 56, 143, 0.5);">
+                    🪚
+                </div>
+                <h3>Carpenting Works</h3>
+                <p>We offer top-notch cleaning: regular, deep, window, and upholstery.</p>
                 {{ $image := resources.Get "images/service4.png" }}
             </div>
             <!-- <img src="{{ $image.RelPermalink }}" height="300px" class="card-image"> -->
