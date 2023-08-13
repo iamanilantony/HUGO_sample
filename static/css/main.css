@@ -377,6 +377,96 @@ header .header-right .hamburger div {
   color: #888;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 1000px; */
+}
+
+.card2 {
+  margin: 10px;
+  /* background-color: #2f2e2e; */
+  border: 1px solid#B26832;
+  color: #ffffff;
+  transition: 0.5s;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  overflow: hidden;
+  /* width: 20%; */
+}
+
+.card-content:hover {
+  display: flex;
+}
+
+.card2:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-content p {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.card-content img {
+  padding: 10px;
+}
+
+.card-content h3 {
+  width: 8rem;
+  font-weight: 500;
+}
+
+.card-content p {
+  width: 16rem;
+  text-align: justify;
+  margin-right: 3rem;
+}
+
+.card-image {
+  width: 40%;
+  height: 280px;
+}
+
+.emoji {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.QNA-Heading {
+  text-align: left;
+  width: 80%;
+  margin-top: 2rem;
+}
+
+.QNA-SubHeading {
+  text-align: left;
+}
+
+
 @media only screen and (max-width: 1000px) {
   header {
     padding: 0 20px;
@@ -470,6 +560,26 @@ header .header-right .hamburger div {
 
   .heading h2 {
     font-size: 1rem;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .QNA-Heading {
+    display: none;
+    text-align: center;
+  }
+
+  .QNA-SubHeading {
+    display: none;
+    text-align: center;
+
+  }
+
+  .qna-section {
+    padding: 0px;
+    margin-top: 20px;
   }
 
 

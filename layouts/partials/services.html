@@ -77,6 +77,13 @@
         flex-direction: column;
         justify-content: center;
     }
+
+
+    @media only screen and (max-width: 500px) {
+        .grid-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 </style>
 
 <div class="section-title d-flex align-items-center justify-content-center w-100">
